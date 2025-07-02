@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* Títulos */
 #cumprimento,
 #cumprimento2 {
     font-family: 'Great Vibes', cursive;
@@ -22,25 +21,23 @@ body {
     margin: 20px 0;
 }
 
-/* Container principal */
 .container {
     display: flex;
     flex-direction: row;
     gap: 100px;
     justify-content: center;
-    flex-wrap: wrap; /* para permitir quebra em telas pequenas */
+    flex-wrap: wrap; 
 }
 
-/* Coração animado */
+
 .imagem-coracao {
     width: 80px;
     height: 80px;
     position: relative;
-    top: 150px;
+    top: 100px;
     animation: baterCoracao 2s ease-in-out infinite alternate;
 }
 
-/* Poema */
 .poema {
     border: solid 2px #E94B5F;
     padding: 10px;
@@ -55,7 +52,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Slides */
 .slides {
     display: flex;
     flex-direction: row;
@@ -80,7 +76,6 @@ body {
     object-fit: cover;
 }
 
-/* Setas */
 .arrow {
     font-size: 40px;
     color: #E94B5F;
@@ -95,7 +90,6 @@ body {
     cursor: pointer;
 }
 
-/* Posts */
 .posts {
     display: flex;
     flex-direction: row;
@@ -112,7 +106,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Details */
 details {
     width: 300px;
     max-width: 90vw;
@@ -152,7 +145,6 @@ details[open] p {
     padding: 10px 15px;
 }
 
-/* Animações */
 @keyframes baterCoracao {
     from {
         width: 80px;
@@ -173,9 +165,6 @@ details[open] p {
     }
 }
 
-/* === MEDIA QUERIES PARA RESPONSIVIDADE === */
-
-/* Para telas até 768px (tablets e celulares grandes) */
 @media (max-width: 768px) {
     .container {
         gap: 40px;
@@ -225,7 +214,6 @@ details[open] p {
     }
 }
 
-/* Para telas até 400px (celulares pequenos) */
 @media (max-width: 400px) {
     #cumprimento,
     #cumprimento2 {
